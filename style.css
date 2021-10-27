@@ -2,25 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+.container{
+    margin: auto;
+    width: 70%;
+    margin-top: 150px;
+    display: flex;
+}
+
+.items{
+    width:calc(100% - 200px);
 }
 
 .item{
-    height: 100%;
+    width: 100%;
     display: none;
     position: relative;
 }
 
-.item img{
-    width: 100%;
+.items img{
+    width:100%;
     height: 100%;
     object-fit: cover;
-}
+} 
 
 .item.active{
     display: block;
 }
 
-.item .text{
+.items .text{
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -28,8 +40,7 @@
     color: white;
 }
 
-.thumbs{
-    height: 300px;
-    background-color: black;
-    position: relative;
-}
+.thumb img{
+    width: 200px;
+    height: 87px;
+} 
